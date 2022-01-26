@@ -11,7 +11,7 @@ public class Number2753
 		int score = input.nextInt();
 		
 		
-		if((score%4) == 0 && (score/100 != 0 || (score%400) == 0))
+		if(((score%4) == 0 && score%100 != 0) || (score%400) == 0)
 		{
 			System.out.println(1);
 		}

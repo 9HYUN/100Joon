@@ -5,3 +5,5 @@
 .project.js
 
 src/test/
+
+bin/test/
