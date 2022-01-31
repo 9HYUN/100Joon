@@ -1,4 +1,4 @@
-package stage3;
+package stage3_for;
 
 import java.util.Scanner;
 

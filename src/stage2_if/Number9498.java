@@ -1,4 +1,4 @@
-package stage2;
+package stage2_if;
 
 import java.util.Scanner;
 
