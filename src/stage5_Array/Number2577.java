@@ -1,4 +1,4 @@
-package stage5_Array;
+package stage5_array;
 
 import java.util.Scanner;
 
