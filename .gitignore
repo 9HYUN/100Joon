@@ -1,9 +1,15 @@
 .settings/
 
-.classpath.js
+.classpath
 
-.project.js
+.project
 
 src/test/
 
 bin/test/
+
+# intellij configs
+.idea/
+
+src/100joon.iml
+bin/100joon.iml

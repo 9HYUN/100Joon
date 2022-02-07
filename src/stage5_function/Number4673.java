@@ -1,19 +1,31 @@
 package stage5_function;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Number4673 
 {
 	public static void main(String[] args) 
 	{
-		for (int i=1; i < 10001; i++)
+		boolean[] resultNumber = new boolean[10001];
+		
+		
+		for (int i=1; i <= 10000; i++)
 		{
-			System.out.println(total(i));
-			if (total(i) == 10000)
+			int result = total(i);
+			if(result <= 10000)
 			{
-				break;
+				resultNumber[result] = true;
 			}
 		}
 		
+		for(int i = 1; i < resultNumber.length; i++)
+		{
+			if(!resultNumber[i])
+			{
+				System.out.println(i);
+			}
+		}
 	}
 	
 	public static int total(int number)

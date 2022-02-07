@@ -13,11 +13,11 @@ public class Number2753
 		
 		if(((score%4) == 0 && score%100 != 0) || (score%400) == 0)
 		{
-			System.out.println(1);
+			System.out.println("윤년입니다.");
 		}
 		else
 		{
-			System.out.println(0);
+			System.out.println("윤년이 아닙니다.");
 		}
 		input.close();
 	}
