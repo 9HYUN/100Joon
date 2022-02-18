@@ -1,42 +1,44 @@
 package stage14_backTracking;
 
 import java.util.Scanner;
- 
-public class Number15649 {
- 
-	public static int[] arr;
-	public static boolean[] visit;
- 
-	public static void main(String[] args) {
- 
-		Scanner in = new Scanner(System.in);
- 
-		int N = in.nextInt();
-		int M = in.nextInt();
- 
-		arr = new int[M];
-		visit = new boolean[N];
-		dfs(N, M, 0);
- 
+
+public class Number15649 
+{
+
+	public static int[] arr1;
+	public static boolean[] arr2;
+	
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		int number1 = input.nextInt();
+		int number2 = input.nextInt();
+		int depth = 0;
+		arr1 =new int[number2];
+		arr2 =new boolean[number1];
+		dfs(number1, number2, 0);
 	}
- 
-	public static void dfs(int N, int M, int depth) {
-		if (depth == M) {
-			for (int val : arr) {
-				System.out.print(val + " ");
+	
+	public static void dfs(int number1, int number2, int depth)
+	{
+		if(depth == number2)
+		{
+			for (int val : arr1)
+			{
+				System.out.println(val + " ");
 			}
-			System.out.println();
 			return;
 		}
- 
-		for (int i = 0; i < N; i++) {
-			if (!visit[i]) {
-				visit[i] = true;
-				arr[depth] = i + 1;
-				dfs(N, M, depth + 1);
-				visit[i] = false;
+		for(int i = 0; i < number1; i++)
+		{
+			if(!arr2[i])
+			{
+				arr2[i] = true;
+				arr1[depth] = i + 1;
+				dfs(number1, number2, depth+1);
+				arr2[i] = false;
 			}
 		}
-	}
- 
+	}	
+	
 }
